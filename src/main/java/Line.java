@@ -1,8 +1,8 @@
-import java.awt.Point;
+
 
 public class Line {
-    Point x;
-    Point y;
+    private Point x;
+    private Point y;
 
     public Line(Point x, Point y){
         this.x=x;
@@ -19,6 +19,22 @@ public class Line {
         double x2=y.getX();
         double y2=y.getY();
         return Math.sqrt((Math.pow(x2-x1, 2))+(Math.pow(y2-y1, 2)));
+    }
+
+    public Point getX() {
+        return x;
+    }
+
+    public Point getY() {
+        return y;
+    }
+
+    public void setX(Point x) {
+        this.x = x;
+    }
+
+    public void setY(Point y) {
+        this.y = y;
     }
 
     public String toString(){
