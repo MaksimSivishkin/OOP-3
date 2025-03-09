@@ -1,14 +1,15 @@
-/*public class PolyLine {
+import javax.sound.sampled.Line;
+import java.awt.Point;
+
+public class PolyLine {
     Line x;
+    Line y;
+    Line z;
 
-
-    public PolyLine(Line x){
+    public PolyLine(Line x, Line y, Line z){
         this.x=x;
-
-    }
-    public PolyLine(int x1, int y1, int x2, int y2){
-        this.x=new Line(point, point1);
-         
-    }
+        this.y=y;
+        this.z=z;
+    } 
 }
-*/
+
