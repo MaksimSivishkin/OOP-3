@@ -1,3 +1,4 @@
+
 public class Point {
     private int x;
     private int y;
@@ -8,17 +9,14 @@ public class Point {
     }
 
     public int getX() {
-
         return x;
     }
 
     public int getY() {
-
         return y;
     }
 
     public String toString(){
-        String res=String.format("{%d;%d}", x, y);
-        return res;
+        return String.format("{%s;%s}", x, y);
     }
 }

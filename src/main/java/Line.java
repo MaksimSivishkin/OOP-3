@@ -1,8 +1,10 @@
+import java.awt.Point;
+
 public class Line {
     Point x;
     Point y;
 
-    public Line(){
+    public Line(Point x, Point y){
         this.x=x;
         this.y=y;
     }
@@ -12,10 +14,10 @@ public class Line {
         this.y=new Point(x2, y2);
     }
     public double getLine(){
-        int x1=x.getX();
-        int y1=x.getY();
-        int x2=y.getX();
-        int y2=y.getY();
+        double x1=x.getX();
+        double y1=x.getY();
+        double x2=y.getX();
+        double y2=y.getY();
         return Math.sqrt((Math.pow(x2-x1, 2))+(Math.pow(y2-y1, 2)));
     }
 
