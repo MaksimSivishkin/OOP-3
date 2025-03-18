@@ -8,7 +8,6 @@ public class Start {
         Point point3 = new Point(15,19);
         Point3D point3D = new Point3D(1,3,1);
 
-
         System.out.println(point3D);
 
     }

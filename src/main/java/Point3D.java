@@ -16,10 +16,6 @@ public class Point3D extends Point{
 
     @Override
     public String toString() {
-        return "Point3D{" +
-                "z=" + z +
-                ", x=" + x +
-                ", y=" + y +
-                '}';
+        return String.format("{%s,%s,%s}",x,y,z);
     }
 }
