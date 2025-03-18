@@ -15,7 +15,7 @@ public class Start {
         closedPolyLine.addPolyLine(line);
         closedPolyLine.addPolyLine(line1);
         closedPolyLine.addPolyLine(line2);
-        closedPolyLine.addPolyLine(new Line(point3,point));
+        closedPolyLine.addPolyLine(new Line(point,point3));
 
 
         System.out.println(closedPolyLine.sumPolyLine());
@@ -23,4 +23,7 @@ public class Start {
 
 
     }
+}
+interface Measurable{
+    double getLine(int x1, int y1, int x2, int y2);
 }
