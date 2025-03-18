@@ -1,26 +1,9 @@
-public class Point3D {
-    private Point x;
+public class Point3D extends Point{
     private int z;
 
-    public Point3D(Point x, int z) {
-        this.x = x;
+    public Point3D(int x, int y, int z) {
+        super(x, y);
         this.z = z;
-    }
-    public Point3D(int x1, int y1, int z) {
-        this.x=new Point(x1, y1);
-        this.z = z;
-    }
-    public double getPoint3D() {
-        double x1 = x.getX();
-        double y1 = x.getY();
-        return x1;
-    }
-    public Point getX() {
-        return x;
-    }
-
-    public void setX(Point x) {
-        this.x = x;
     }
 
     public int getZ() {
@@ -33,6 +16,10 @@ public class Point3D {
 
     @Override
     public String toString() {
-        return String.format("Точка 3D {%s,%s,%s}", getX().getX(), getX().getY(),z);
+        return "Point3D{" +
+                "z=" + z +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
     }
 }
