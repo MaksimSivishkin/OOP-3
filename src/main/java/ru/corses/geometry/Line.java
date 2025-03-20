@@ -16,7 +16,7 @@ public class Line implements Interfaces.Measurable {
         this.y=new Point(x2, y2);
     }
     @Override
-    public double getLine(double x1, double y1, double x2, double y2) {
+    public double getLenghth(double x1, double y1, double x2, double y2) {
         x1=x.getX();
         y1=x.getY();
         x2=y.getX();

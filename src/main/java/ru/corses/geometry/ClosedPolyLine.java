@@ -12,10 +12,10 @@ public class ClosedPolyLine extends PolyLine {
     }
 
     @Override
-    public double sumPolyLine(){ //Метод возвращает сумму линий замкнутой кривой
+    public double getLenghth(){ //Метод возвращает сумму линий замкнутой кривой
         double sum=0;
         for(Line line : lines){
-            sum += line.getLine(line.getX().getX(), line.getX().getY(), line.getY().getX(), line.getY().getY());
+            sum += line.getLenghth(line.getX().getX(), line.getX().getY(), line.getY().getX(), line.getY().getY());
         }
         return sum;
     }
