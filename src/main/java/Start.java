@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Start {
     public static void main(String[] args) {
         Point point = new Point(1,3);
@@ -17,10 +15,17 @@ public class Start {
         closedPolyLine.addPolyLine(line2);
         closedPolyLine.addPolyLine(new Line(point3,point));
 
-
+        PolyLine polyLine = new PolyLine();
+        polyLine.addPolyLine(line);
+        polyLine.addPolyLine(line1);
+        polyLine.addPolyLine(line2);
+        System.out.println(polyLine.sumPolyLine());
         System.out.println(closedPolyLine.sumPolyLine());
 
 
 
     }
+}
+interface Measurable{
+    double getLine(double x1, double y1, double x2, double y2);
 }

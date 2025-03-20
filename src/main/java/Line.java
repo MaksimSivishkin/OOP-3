@@ -1,4 +1,4 @@
-public class Line {
+public class Line implements Measurable {
     protected Point x;
     protected Point y;
 
@@ -11,11 +11,12 @@ public class Line {
         this.x=new Point(x1, y1);
         this.y=new Point(x2, y2);
     }
-    public double getLine(){
-        double x1=x.getX();
-        double y1=x.getY();
-        double x2=y.getX();
-        double y2=y.getY();
+    @Override
+    public double getLine(double x1, double y1, double x2, double y2) {
+        x1=x.getX();
+        y1=x.getY();
+        x2=y.getX();
+        y2=y.getY();
         return Math.sqrt((Math.pow(x2-x1, 2))+(Math.pow(y2-y1, 2)));
     }
 

@@ -10,11 +10,8 @@ public class PolyLine {
 
     public List listPolyLine(){  //Метод возвращает список длин линий
         ArrayList<Double> lines1=new ArrayList<>();
-        double x=0;
         for(Line line : lines){
-            x += line.getLine();
-            lines1.add(x);
-            x=0;
+            lines1.add(line.getLine(line.getX().getX(), line.getX().getY(), line.getY().getX(), line.getY().getY()));
         }
         return lines1;
     }
@@ -22,7 +19,7 @@ public class PolyLine {
     public double sumPolyLine(){ //Метод возвращает сумму линий из списка
         double sum=0;
         for(Line line : lines){
-            sum += line.getLine();
+            sum += line.getLine(line.getX().getX(), line.getX().getY(), line.getY().getX(), line.getY().getY());
         }
         return sum;
     }

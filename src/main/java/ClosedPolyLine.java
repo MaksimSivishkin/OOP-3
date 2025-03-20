@@ -13,7 +13,7 @@ public class ClosedPolyLine extends PolyLine {
     public double sumPolyLine(){ //Метод возвращает сумму линий замкнутой кривой
         double sum=0;
         for(Line line : lines){
-            sum += line.getLine();
+            sum += line.getLine(line.getX().getX(), line.getX().getY(), line.getY().getX(), line.getY().getY());
         }
         return sum;
     }
