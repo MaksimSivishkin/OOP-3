@@ -1,3 +1,5 @@
+package ru.corses.geometry;
+
 public class ClosedPolyLine extends PolyLine {
 
     public ClosedPolyLine() {

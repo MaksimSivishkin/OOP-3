@@ -1,3 +1,5 @@
+package ru.corses.geometry;
+
 import java.util.ArrayList;
 import java.util.List;
 

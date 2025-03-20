@@ -1,4 +1,8 @@
-public class Line implements Measurable {
+package ru.corses.geometry;
+
+import ru.corses.main.Interfaces;
+
+public class Line implements Interfaces.Measurable {
     protected Point x;
     protected Point y;
 

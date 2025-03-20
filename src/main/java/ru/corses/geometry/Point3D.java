@@ -1,4 +1,6 @@
-public class Point3D extends Point{
+package ru.corses.geometry;
+
+public class Point3D extends Point {
     private int z;
 
     public Point3D(int x, int y, int z) {

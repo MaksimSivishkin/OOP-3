@@ -1,3 +1,5 @@
+package ru.corses.geometry;
+
 public class Point {
     protected int x;
     protected int y;
