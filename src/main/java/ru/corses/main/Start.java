@@ -1,20 +1,18 @@
 package ru.corses.main;
 
-import ru.corses.geometry.Line;
-import ru.corses.geometry.PolyLine;
-import ru.corses.geometry.Point;
-
-import javax.swing.*;
-import java.awt.*;
+import static java.lang.Integer.parseInt;
+import static java.lang.Math.pow;
 
 
 public class Start {
     public static void main(String[] args) {
-
-        Point point = new Point(1,2);
-        java.awt.Point point1 = new java.awt.Point(1,2);
-        System.out.println(point);
-        System.out.println(point1);
+        System.out.println(myPow("5","5"));
+    }
+    public static int myPow(String x, String y){
+        int z = parseInt(x);
+        int q = parseInt(y);
+        int s = (int) pow( z, q);
+        return s;
     }
 
 }

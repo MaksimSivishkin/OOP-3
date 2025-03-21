@@ -1,11 +1,11 @@
 package ru.corses.geometry;
 
-import ru.corses.main.Interfaces;
+import ru.corses.main.Measurable;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class PolyLine implements Interfaces.Measurable {
+public class PolyLine implements Measurable {
     protected ArrayList <Line> lines=new ArrayList<>();
 
     public void addPolyLine(Line line){
